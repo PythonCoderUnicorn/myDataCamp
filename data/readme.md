@@ -6,3 +6,33 @@ Data in `.RDA` or `.RDS` will be converted to `CSV` for widespread use and utili
 Note:
 
 Datasets will have the course name or associated wording to the dataset as to indicate which dataset belongs to what course. `DataShell_Spotify_Popularity.csv` belongs to the course Data Science using the Terminal. 
+
+----
+
+`.fst` files
+```
+install.packages("fst")
+library(fst)
+df <- read_fst("your_data.fst")
+```
+
+feather files
+```
+pip install pyarrow
+import pyarrow.feather as feather
+df = feather.read_feather('your_file.feather')
+```
+
+pickle `.pkl`
+```
+import pickle
+# Replace 'your_file.p' with the path to your file
+with open('your_file.p', 'rb') as file:
+    data = pickle.load(file)
+
+print(data)
+```
+
+
+
+
