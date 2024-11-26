@@ -39,6 +39,9 @@ library(haven)
 haven::read_sav("importingData_big5.sav")
 ```
 
-
-
+`.dta` STATA file 
+```
+library(haven)
+haven::read_dta("importingData_educationequality.dta")
+```
 
