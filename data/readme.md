@@ -33,6 +33,12 @@ with open('your_file.p', 'rb') as file:
 print(data)
 ```
 
+`.sav` file
+```
+library(haven)
+haven::read_sav("importingData_big5.sav")
+```
+
 
 
 
